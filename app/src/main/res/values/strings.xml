@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">WWG</string>
+
+    <string-array name="raza">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Orco</item>
+        <item>Minotauro</item>
+    </string-array>
+    <string-array name="clase">
+        <item>Guerrero</item>
+        <item>Mago</item>
+        <item>Paladin</item>
+        <item>Bardo</item>
+
+    </string-array>
+    <string name="historia" >
+       <b>EL CATACLISMO</b>.\n\n
+        Se conoce como el cataclismo a la crisis que en el año
+1020 del calendario común estuvo a punto de acabar
+con todos los reinos de Tría.El enemigo, conocido por
+todos como Rojo Fuego, apareció en el norte. Muchos
+creen que fueron los degronios los que lo trajeron a la
+vida. Cierto o no, fueron las islas Dantes las que sufrieron
+el primer golpe. Tras diezmar casi la población de las
+cinco islas, pasó a Egaria, arrasando a su paso tierras,
+bestias y humanos. Los ejércitos eran inútiles ante él. La
+única vez que un enemigo logró arrasar, o siquiera pisar
+Daria, fue cuando este ser decidió atacar Hidalea. Fue
+cuando pasó al continente sur cuando, buscados y
+convocados por el Extraño, los trece magníficos,
+portando las reliquias de sus casas, fueron reunidos y
+llevados a la batalla final.Toda esta historia duró algo
+más de cinco años desde la aparición en el norte, hasta el
+enfrentamiento final en Hidalea.A comienzos del 1026
+del calendario común, Rojo Fuego fue derrotado, según
+la mayoría, y desterrado de alguna forma según otros.
+De los trece solo el extraño y cuatro más fueron vistos
+tras la victoria. De los demás, se supone que cayeron en
+el enfrentamiento.Los supervivientes fueron Asir el
+godeo, Durbán el legariano, Sato el tharesio y Aguerio el
+neodariano, además del extraño. De los ocho que faltan,
+se encontraron los cuerpos de Fises el atleo, Gáribo el
+demio, Antiso el fidio y Trubol el sarutesio. Nada se sabe
+de los cuerpos ni las reliquias de Zuel el dantegro, Katón
+el dario, Siles el degrón y Suley el pretiano.\n\n\n
+
+        <b>LA GRAN TRAGEDIA</b>.\n\n
+En el año 1070 se produce un hecho que aún no ha
+podido ser del todo explicado por ninguno de los sabios
+que han tratado de averiguar qué ocurrió en Legareth
+para que el ejército del país fuera víctima de la “locura
+sangrienta”. Las dos explicaciones más creíbles son la que
+culpa a una epidemia de algún tipo, y que se expandió
+entre aquellos que tuvieron contacto con los afectados, y
+la otra habla de algún tipo de maldición, hechizo o
+embrujo. Al margen del origen, lo que sí es cierto es que
+ese año el ejército de Legareth inicia una sangrienta
+campaña contra todo aquél que encontraba a su paso,
+contagiándolo de la locura sangrienta, una afección que
+convertía a la víctima en un guerrero temible, sediento
+de sangre, que no desfallecía ni necesitaba descanso, y
+que solo con la decapitación dejaba de luchar. La ciudad
+fortaleza de Triagón se cerró al exterior y se libró tanto
+de la locura como de los ataques de su propio ejército.
+La noticia comenzó a extenderse por toda Tria, cuando
+la marea sangrienta invadió Sarutés y Tharesia. Muchos
+fueron los que, sin sospechar nada, cayeron víctimas del
+ataque salvaje, aunque siempre organizado, del ejército
+de infectados. Una marea de seres semi-humanos
+
+sitiaron el valle de Vedania y la fortaleza de Vandal.
+Arrasaron Tharesia y atravesaron Pretia hasta llegar la
+frontera roja. Los tres lugares donde fueron detenidos fue
+en el mar de arena, que no lograron atravesar, el
+pantano de las luces, donde cayeron infinidad de
+infectados a manos de neodarios y tharesios, y la frontera
+roja, donde la ciudad fortaleza de Indalea contuvo la
+marea. Muchos dieron su vida durante la gran tragedia
+y algunos, muy pocos, sobrevivieron en el
+enfrentamiento directo. Un día, cuando el ejército de
+Daria logró llegar a Vandal y Vedania, cuando en la
+frontera roja pasó de contener a atacar y perseguir,
+cuando los neodarios y los tharesios se disponían a salir
+del pantano para dar el golpe de gracia a las diezmadas
+fuerzas del ejército maldito, de repente, igual que
+apareció, se esfumó la locura. Los hombres que habían
+estado luchando salvajemente, ahora miraban
+horrorizados a su alrededor. Una lucha sin un objetivo
+aparente, sin un fin, con muchas víctimas y lo más
+frustrante, aparentemente sin un culpable. Todos los
+reinos fueron víctimas, de una u otra forma.\n\n\n
+
+        <b>LA GRAN GUERRA</b>\n\n
+Despues de que Rojo Fuego y la “locura sangrienta”
+acabaran con una gran parte de la población del reino,
+llegaría la tragedia más reciente, sobre el 1110, todo lo
+que era el antiguo reino de Dalia y todos sus territorios
+quedarían divididos, expoliados y muchos…
+exterminados. El rey Thulgrim decidió no volver a
+
+exponer a su reino a una tragedia como las de la
+antigüedad y originó un golpe de estado de tal
+magnitud, que la Antigua república de Dalia no pudo a
+penas defenderse y que arrastró a todos los reinos a una
+guerra civil entre hermanos y hermanas que duraría 10
+años y se le recordaría con el nombre de “la gran
+guerra”. La fuerza militar de Thulgrim nunca pudo con
+“el puño de Tria” la legión militar fiel a la república
+Daliana o eso cuentan las lenguas de la época, que
+resistió hasta el último día y que solo pudo ser vencida
+por una efigie extraña con la forma de Thulgrim que
+portaba una de las antiguas reliquias. Desde ese
+momento, Thulgrim hizo saber a todas las extensiones del
+reino que nadie nunca volvería a sublevarse ni nada
+volvería a amenazar al reino. El reino de Dalia y su
+republica pasaron a llamarse El reino de Tria, quedando
+como Dalia solo el nombre de su capital y quedando en
+el olvido los antiguos tiempos de reyes custodios en cada
+región y cultos a dioses antiguos.
+        \n\n\n\n
+
+    </string>
+</resources>
