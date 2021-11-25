@@ -1,8 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPersonaje"
-    android:background="@drawable/background"/>
+    android:background="@drawable/background">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPersonaje">
+
+    <ImageView
+        android:id="@+id/silueta"
+        android:layout_width="162dp"
+        android:layout_height="349dp"
+        android:layout_marginTop="96dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/silueta" />
+
+    <TextView
+        android:id="@+id/per_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Nombre"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/silueta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/per_raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clase"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/silueta"
+        app:layout_constraintEnd_toStartOf="@+id/silueta"
+        app:layout_constraintTop_toTopOf="@+id/per_nombre" />
+
+    <TextView
+        android:id="@+id/per_clase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raza"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/silueta"
+        app:layout_constraintStart_toEndOf="@+id/silueta"
+        app:layout_constraintTop_toTopOf="@+id/per_nombre" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="HABILIDADES"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/silueta"
+        app:layout_constraintStart_toStartOf="@+id/silueta"
+        app:layout_constraintTop_toBottomOf="@+id/silueta" />
+
+    <ImageView
+        android:id="@+id/cartaAccesorio"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSilueta"
+        app:layout_constraintTop_toTopOf="@+id/silueta"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaAccesorio2"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaAccesorio3"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio2"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaArma"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/silueta"
+        app:layout_constraintEnd_toStartOf="@+id/silueta"
+        app:layout_constraintTop_toBottomOf="@+id/cartaAccesorio"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaEscudo"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="@+id/silueta"
+        app:layout_constraintStart_toEndOf="@+id/silueta"
+        app:layout_constraintTop_toBottomOf="@+id/cartaArmadura"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaHabilidad1"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        app:layout_constraintStart_toStartOf="@+id/cartaArma"
+        app:layout_constraintTop_toTopOf="@+id/cartaHabilidad2"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaHabilidad2"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cartaHabilidad3"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/cartaHabilidad1"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaHabilidad3"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartaEscudo"
+        app:layout_constraintTop_toTopOf="@+id/cartaHabilidad2"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaArmadura"
+        android:layout_width="83dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/silueta"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
+        app:srcCompat="@drawable/dorso" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_clase" />
+
+    <Button
+        android:id="@+id/btnSilueta"
+        android:layout_width="80dp"
+        android:layout_height="243dp"
+        android:background="@null"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/silueta"
+        app:layout_constraintEnd_toEndOf="@+id/silueta"
+        app:layout_constraintStart_toStartOf="@+id/silueta"
+        app:layout_constraintTop_toTopOf="@+id/silueta" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="73dp"
+        android:layout_height="167dp"
+        android:background="@null"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/cartaAccesorio3"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
+        app:layout_constraintStart_toStartOf="@+id/cartaAccesorio3"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
