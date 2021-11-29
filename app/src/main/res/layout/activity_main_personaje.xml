@@ -4,12 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:screenOrientation="portrait">
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainPersonaje">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="73dp"
+        android:layout_height="167dp"
+        android:background="@null"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/cartaAccesorio3"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cartaAccesorio3"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/silueta"
@@ -27,7 +41,7 @@
         android:id="@+id/per_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="64dp"
         android:text="Nombre"
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/silueta"
@@ -59,42 +73,13 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="HABILIDADES"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="@+id/silueta"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="@+id/silueta"
         app:layout_constraintTop_toBottomOf="@+id/silueta" />
-
-    <ImageView
-        android:id="@+id/cartaAccesorio"
-        android:layout_width="66dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnSilueta"
-        app:layout_constraintTop_toTopOf="@+id/silueta"
-        app:srcCompat="@drawable/dorso" />
-
-    <ImageView
-        android:id="@+id/cartaAccesorio2"
-        android:layout_width="66dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
-        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
-        app:srcCompat="@drawable/dorso" />
-
-    <ImageView
-        android:id="@+id/cartaAccesorio3"
-        android:layout_width="66dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
-        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio2"
-        app:srcCompat="@drawable/dorso" />
 
     <ImageView
         android:id="@+id/cartaArma"
@@ -149,6 +134,7 @@
         android:layout_width="83dp"
         android:layout_height="127dp"
         android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cartaAccesorio3"
         app:layout_constraintStart_toEndOf="@+id/silueta"
         app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
         app:srcCompat="@drawable/dorso" />
@@ -183,16 +169,86 @@
         app:layout_constraintStart_toStartOf="@+id/silueta"
         app:layout_constraintTop_toTopOf="@+id/silueta" />
 
+    <ImageView
+        android:id="@+id/cartaAccesorio"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSilueta"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/silueta"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaAccesorio2"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
+        app:srcCompat="@drawable/dorso" />
+
+    <ImageView
+        android:id="@+id/cartaAccesorio3"
+        android:layout_width="66dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/cartaArma"
+        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio2"
+        app:srcCompat="@drawable/dorso" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCESORIOS"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
+        app:layout_constraintStart_toStartOf="@+id/cartaAccesorio3"
+        app:layout_constraintTop_toBottomOf="@+id/cartaAccesorio3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARMADURA"
+        app:layout_constraintEnd_toEndOf="@+id/cartaArmadura"
+        app:layout_constraintStart_toStartOf="@+id/cartaArmadura"
+        app:layout_constraintTop_toBottomOf="@+id/cartaArmadura" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARMA"
+        app:layout_constraintEnd_toEndOf="@+id/cartaArma"
+        app:layout_constraintStart_toStartOf="@+id/cartaArma"
+        app:layout_constraintTop_toBottomOf="@+id/cartaArma" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESCUDO"
+        app:layout_constraintEnd_toEndOf="@+id/cartaEscudo"
+        app:layout_constraintStart_toStartOf="@+id/cartaEscudo"
+        app:layout_constraintTop_toBottomOf="@+id/cartaEscudo" />
+
     <Button
-        android:id="@+id/button3"
-        android:layout_width="73dp"
-        android:layout_height="167dp"
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="155dp"
         android:background="@null"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/cartaAccesorio3"
-        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintStart_toStartOf="@+id/cartaAccesorio3"
-        app:layout_constraintTop_toTopOf="@+id/cartaAccesorio" />
+        app:layout_constraintTop_toTopOf="@+id/button3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

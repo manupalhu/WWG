@@ -14,7 +14,7 @@
         <item>Bardo</item>
 
     </string-array>
-    <string name="historia" >
+    <string name="historia">
        <b>EL CATACLISMO</b>.\n\n
         Se conoce como el cataclismo a la crisis que en el año
 1020 del calendario común estuvo a punto de acabar
@@ -121,4 +121,5 @@ región y cultos a dioses antiguos.
         \n\n\n\n
 
     </string>
+
 </resources>

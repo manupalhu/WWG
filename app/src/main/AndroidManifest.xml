@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".Atributos"
+            android:exported="true" />
+        <activity
+            android:name=".placeholder.Atributos"
+            android:exported="true" />
+        <activity
             android:name=".HistoriaActivity"
             android:exported="true" />
         <activity

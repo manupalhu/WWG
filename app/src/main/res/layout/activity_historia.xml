@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HistoriaActivity"
-    android:background="@color/Black">
+    android:background="@color/Black"
+    android:screenOrientation="portrait">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
