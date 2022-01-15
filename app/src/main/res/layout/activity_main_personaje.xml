@@ -47,7 +47,9 @@
         app:layout_constraintBottom_toTopOf="@+id/silueta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/per_raza"
@@ -57,6 +59,8 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/silueta"
         app:layout_constraintEnd_toStartOf="@+id/silueta"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/per_nombre" />
 
     <TextView
@@ -66,6 +70,8 @@
         android:text="Raza"
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/silueta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toEndOf="@+id/silueta"
         app:layout_constraintTop_toTopOf="@+id/per_nombre" />
 
@@ -85,9 +91,10 @@
         android:id="@+id/cartaArma"
         android:layout_width="83dp"
         android:layout_height="127dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/silueta"
         app:layout_constraintEnd_toStartOf="@+id/silueta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cartaAccesorio"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/dorso" />
@@ -97,6 +104,7 @@
         android:layout_width="83dp"
         android:layout_height="127dp"
         app:layout_constraintBottom_toBottomOf="@+id/silueta"
+        app:layout_constraintEnd_toEndOf="@+id/cartaArmadura"
         app:layout_constraintStart_toEndOf="@+id/silueta"
         app:layout_constraintTop_toBottomOf="@+id/cartaArmadura"
         app:layout_constraintVertical_bias="1.0"
@@ -106,6 +114,8 @@
         android:id="@+id/cartaHabilidad1"
         android:layout_width="83dp"
         android:layout_height="127dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cartaHabilidad2"
         app:layout_constraintStart_toStartOf="@+id/cartaArma"
         app:layout_constraintTop_toTopOf="@+id/cartaHabilidad2"
         app:srcCompat="@drawable/dorso" />
@@ -115,6 +125,7 @@
         android:layout_width="83dp"
         android:layout_height="127dp"
         android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cartaHabilidad3"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toEndOf="@+id/cartaHabilidad1"
@@ -125,6 +136,7 @@
         android:id="@+id/cartaHabilidad3"
         android:layout_width="83dp"
         android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cartaHabilidad2"
         app:layout_constraintEnd_toEndOf="@+id/cartaEscudo"
         app:layout_constraintTop_toTopOf="@+id/cartaHabilidad2"
         app:srcCompat="@drawable/dorso" />
@@ -135,6 +147,8 @@
         android:layout_height="127dp"
         android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="@+id/cartaAccesorio3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/silueta"
         app:layout_constraintTop_toTopOf="@+id/cartaAccesorio"
         app:srcCompat="@drawable/dorso" />
@@ -173,11 +187,12 @@
         android:id="@+id/cartaAccesorio"
         android:layout_width="66dp"
         android:layout_height="103dp"
-        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/silueta"
         app:layout_constraintEnd_toStartOf="@+id/btnSilueta"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/silueta"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/dorso" />
 
     <ImageView
@@ -194,8 +209,8 @@
         android:id="@+id/cartaAccesorio3"
         android:layout_width="66dp"
         android:layout_height="103dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cartaArma"
         app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="@+id/cartaArma"

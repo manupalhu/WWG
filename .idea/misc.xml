@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/meqem/AndroidStudioProjects/WWG/app/src/main/res/layout/activity_main_personaje.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_atributos.xml" value="0.31614583333333335" />
         <entry key="app/src/main/res/layout/activity_crear_personaje.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_historia.xml" value="0.31614583333333335" />
