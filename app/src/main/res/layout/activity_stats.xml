@@ -1,57 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:screenOrientation="portrait"
-    tools:ignore="SpeakableTextPresentCheck">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    tools:context=".Stats">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="115dp"
-        android:layout_height="157dp"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/img_mochila"
+        android:layout_width="98dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07999998"
-        app:srcCompat="@drawable/mochila" />
+        app:srcCompat="@drawable/mochila"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="91dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/img_oro"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_mochila"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.651"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/img_mochila"
+        app:layout_constraintTop_toTopOf="@+id/img_mochila"
+        app:layout_constraintVertical_bias="0.26"
         app:srcCompat="@drawable/bolsa_oro" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="54dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="84dp"
+        android:id="@+id/img_atras"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_mochila"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.035"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
+    <TextView
+        android:id="@+id/tv_oro"
+        android:layout_width="133dp"
+        android:layout_height="38dp"
+        android:text="000000"
+        android:textAlignment="center"
+        android:textColor="@color/Gold"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/img_oro"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/img_oro"
+        app:layout_constraintTop_toBottomOf="@+id/img_oro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="INI:"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_atras"
+        app:layout_constraintTop_toBottomOf="@+id/img_mochila" />
+
+    <TextView
+        android:id="@+id/tv_ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="INI:"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_atras"
+        app:layout_constraintTop_toBottomOf="@+id/img_mochila" />
+
+    <TextView
+        android:id="@+id/ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="205dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="FUERZA:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/fuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fuerza"
+        app:layout_constraintStart_toEndOf="@+id/tv_fuerza"
+        app:layout_constraintTop_toTopOf="@+id/tv_fuerza"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_destreza"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:text="DESTRE:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_fuerza"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fuerza" />
+
+    <TextView
+        android:id="@+id/tv_inteligencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTELIG:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_destreza"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destreza" />
+
+    <TextView
+        android:id="@+id/tv_constitucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSTI:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_inteligencia"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inteligencia" />
+
+    <TextView
+        android:id="@+id/tv_velocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VELOCIDAD"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_constitucion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_constitucion" />
+
+    <TextView
+        android:id="@+id/tv_salud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALUD"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <TextView
+        android:id="@+id/tv_magia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAGIA"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <TextView
+        android:id="@+id/tv_armadura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARMADURA"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <TextView
+        android:id="@+id/tv_sabiduria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SABIDURIA"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="544dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</ScrollView>

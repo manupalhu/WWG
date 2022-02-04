@@ -188,8 +188,8 @@
         android:layout_width="66dp"
         android:layout_height="103dp"
         app:layout_constraintBottom_toBottomOf="@+id/silueta"
-        app:layout_constraintEnd_toStartOf="@+id/btnSilueta"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintEnd_toStartOf="@+id/silueta"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/silueta"
         app:layout_constraintVertical_bias="0.0"
@@ -261,7 +261,7 @@
         android:background="@null"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/cartaAccesorio2"
         app:layout_constraintStart_toStartOf="@+id/cartaAccesorio3"
         app:layout_constraintTop_toTopOf="@+id/button3" />
 
