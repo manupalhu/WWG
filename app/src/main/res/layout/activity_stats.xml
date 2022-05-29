@@ -11,10 +11,12 @@
         android:layout_width="98dp"
         android:layout_height="104dp"
         android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_atras"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintHorizontal_bias="0.319"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/mochila"
         tools:ignore="ImageContrastCheck" />
 
@@ -24,10 +26,10 @@
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_mochila"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toEndOf="@+id/img_mochila"
         app:layout_constraintTop_toTopOf="@+id/img_mochila"
-        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bolsa_oro" />
 
     <ImageView
@@ -50,24 +52,10 @@
         android:textAlignment="center"
         android:textColor="@color/Gold"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="@+id/img_oro"
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="@+id/img_oro"
-        app:layout_constraintTop_toBottomOf="@+id/img_oro"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="INI:"
-        android:textSize="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/img_atras"
-        app:layout_constraintTop_toBottomOf="@+id/img_mochila" />
+        app:layout_constraintTop_toBottomOf="@+id/img_oro" />
 
     <TextView
         android:id="@+id/tv_ini"
@@ -76,20 +64,24 @@
         android:layout_marginTop="52dp"
         android:text="INI:"
         android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fuerza"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="@+id/img_atras"
-        app:layout_constraintTop_toBottomOf="@+id/img_mochila" />
+        app:layout_constraintTop_toBottomOf="@+id/img_mochila"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/ini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
         android:text="0"
         android:textSize="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView15" />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_ini"
+        app:layout_constraintTop_toTopOf="@+id/tv_ini" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -107,92 +99,63 @@
 
     <TextView
         android:id="@+id/tv_fuerza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="FUERZA:"
+        android:layout_width="91dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="5dp"
+        android:text="FUER:"
         android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_destreza"
+        app:layout_constraintEnd_toStartOf="@+id/fuerza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ini" />
 
     <TextView
         android:id="@+id/fuerza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="20dp"
         android:text="0"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_fuerza"
         app:layout_constraintStart_toEndOf="@+id/tv_fuerza"
         app:layout_constraintTop_toTopOf="@+id/tv_fuerza"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_destreza"
-        android:layout_width="118dp"
+        android:layout_width="91dp"
         android:layout_height="40dp"
-        android:text="DESTRE:"
+        android:text="DEST:"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/tv_fuerza"
         app:layout_constraintTop_toBottomOf="@+id/tv_fuerza" />
 
     <TextView
         android:id="@+id/tv_inteligencia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INTELIG:"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:text="INTE:"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/tv_destreza"
         app:layout_constraintTop_toBottomOf="@+id/tv_destreza" />
 
     <TextView
         android:id="@+id/tv_constitucion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CONSTI:"
+        android:layout_width="91dp"        android:layout_height="wrap_content"
+        android:text="CONS:"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/tv_inteligencia"
         app:layout_constraintTop_toBottomOf="@+id/tv_inteligencia" />
 
     <TextView
         android:id="@+id/tv_velocidad"
-        android:layout_width="wrap_content"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
-        android:text="VELOCIDAD"
+        android:text="VEL:"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="@+id/tv_constitucion"
         app:layout_constraintTop_toBottomOf="@+id/tv_constitucion" />
-
-    <TextView
-        android:id="@+id/tv_salud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SALUD"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="377dp" />
-
-    <TextView
-        android:id="@+id/tv_magia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MAGIA"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="425dp" />
-
-    <TextView
-        android:id="@+id/tv_armadura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ARMADURA"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="482dp" />
-
-    <TextView
-        android:id="@+id/tv_sabiduria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SABIDURIA"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="544dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
